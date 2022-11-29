@@ -13,7 +13,7 @@ import seaborn as sns
 
 
 def main_plotting2():
-    path_save = './saved_files/'
+    path_save = 'C:/Users/optim/Documents/Fuzzy-Investment-Counselor/main_code/saved_files'
     stocks_to_process = ['GE', 'CAT','GM', 'IBM', 'AAPL']
     number_of_stocks = len(stocks_to_process)
     window_size_list = range(5, 45, 5)

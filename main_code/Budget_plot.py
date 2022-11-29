@@ -162,7 +162,7 @@ def load_data(name_to_load, path):
 
 
 
-path_save = './saved_files/'
+path_save = 'C:/Users/optim/Documents/Fuzzy-Investment-Counselor/main_code/saved_files/'
 
 # ------ plotting actual budget and predicted budget
 actual_Budget_portfolio_list = load_data(name_to_load='actual_Budget_portfolio_list',

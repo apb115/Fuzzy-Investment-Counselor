@@ -19,7 +19,7 @@ class Portfolio_optimization:
         n = 4
         S = matrix(self.covariance_matrix)
         print(S)
-        xxx
+        #xxx
         pbar = matrix([.12, .10, .07, .03])
         
         G = matrix(0.0, (n,n))

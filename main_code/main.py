@@ -9,7 +9,7 @@ import pickle
 from Portfolio import Portfolio
 from Fuzzy_logic import Fuzzy_logic
 #import plotly.plotly as py
-from matplotlib.finance import candlestick2_ohlc
+from mplfinance.original_flavor import candlestick2_ohlc #???? from matplotlib.finance import candlestick2_ohlc
 import lstm
 #import plotly.graph_objs as go
 from keras.models import load_model
@@ -26,9 +26,9 @@ def main():
     # input('hi')
 
     # ------ Settings:
-    path_dataset = './dataset/prices-split-adjusted.csv'
-    path_dataset_fundamental = './dataset/fundamentals.csv'
-    path_save = './saved_files/'    # GE, GOOG, ORCL and JNJ have no fundamental features, GM has not enough technical samples
+    path_dataset = 'C:/Users/optim/Documents/Fuzzy-Investment-Counselor/main_code/dataset/prices-split-adjusted.csv'
+    path_dataset_fundamental = 'C:/Users/optim/Documents/Fuzzy-Investment-Counselor/main_code/dataset/fundamentals.csv'
+    path_save = 'C:/Users/optim/Documents/Fuzzy-Investment-Counselor/main_code/saved_files'    # GE, GOOG, ORCL and JNJ have no fundamental features, GM has not enough technical samples
     # 'AAPL', 'AIG', 'AMZN', 'BA', 'CAT', 'COF', 'EBAY', 'F', 'FDX', 'GE', 'GM', 'GOOG', 'HD', 'IBM', 'JNJ', 'JPM', 'KO', \
     # 'MSFT', 'NFLX', 'NKE', 'ORCL', 'PEP', 'T', 'WMT', 'XOM', 'XRX'
     stocks_to_process = ['AAPL', 'AIG', 'AMZN', 'BA', 'CAT', 'COF', 'EBAY', 'F', 'FDX', 'HD', 'IBM', 'JPM', 'KO', 'MSFT', 'NKE', 'PEP', 'T', 'WMT', 'XOM', 'XRX']

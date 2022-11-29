@@ -9,7 +9,7 @@ from matplotlib import ticker
 
 
 def main_plotting():
-    path_save = './saved_files/'
+    path_save = 'C:/Users/optim/Documents/Fuzzy-Investment-Counselor/main_code/saved_files'
     stocks_to_process = [ 'GE', 'CAT','GM', 'IBM', 'AAPL']   # 'AAP', 'AAPL', 'ABC', 'ADSK', 'ALXN' # 'AAP', 'AAPL', 'ADSK', 'AIZ', 'ALLE', 'ALXN', 'AMAT', 'AMGN', 'AMZN', 'AN'
     number_of_stocks = len(stocks_to_process)
     window_size_of_observation_for_prediction_list = range(5, 50, 5)

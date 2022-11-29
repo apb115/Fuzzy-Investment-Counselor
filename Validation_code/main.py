@@ -9,7 +9,7 @@ import pickle
 from Portfolio import Portfolio
 from Fuzzy_logic import Fuzzy_logic
 #import plotly.plotly as py
-from matplotlib.finance import candlestick2_ohlc
+from mplfinance.original_flavor import candlestick2_ohlc
 import lstm
 #import plotly.graph_objs as go
 from keras.models import load_model
@@ -19,9 +19,9 @@ import os
 
 def main():
     # ------ Settings:
-    path_dataset = './dataset/prices-split-adjusted.csv'
-    path_dataset_fundamental = './dataset/fundamentals.csv'
-    path_save = './saved_files/'    # 'GE', 'CAT', 'GM', 'IBM'
+    path_dataset = 'C:/Users/optim/Documents/Fuzzy-Investment-Counselor/main_code/dataset/prices-split-adjusted.csv'
+    path_dataset_fundamental = 'C:/Users/optim/Documents/Fuzzy-Investment-Counselor/main_code/dataset/fundamentals.csv'
+    path_save = 'C:/Users/optim/Documents/Fuzzy-Investment-Counselor/main_code/saved_files'    # 'GE', 'CAT', 'GM', 'IBM'
     stocks_to_process = ['AAPL', 'AIG', 'AMZN', 'BA', 'CAT', 'COF', 'EBAY', 'F', 'FDX', 'GE', 'GM', 'GOOG', 'HD', 'IBM', 'JNJ', 'JPM', 'KO', \
     'MSFT', 'NKE', 'ORCL', 'PEP', 'T', 'WMT', 'XOM', 'XRX']   # 'AAP', 'AAPL', 'ABC', 'ADSK', 'ALXN' # 'AAP', 'AAPL', 'ADSK', 'AIZ', 'ALLE', 'ALXN', 'AMAT', 'AMGN', 'AMZN', 'AN'
     number_of_stocks = len(stocks_to_process)
